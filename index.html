@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VELOX — Design Nasce dall'Eccellenza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">Velox</a>
+  <ul class="nav-links">
+    <li><a href="#collection">Collezione</a></li>
+    <li><a href="#about-section">Il Brand</a></li>
+    <li><a href="#contact-section">Atelier</a></li>
+  </ul>
+  <button class="nav-burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#collection" class="mob-link">Collezione</a>
+  <a href="#about-section" class="mob-link">Il Brand</a>
+  <a href="#contact-section" class="mob-link">Atelier</a>
+</div>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-rim-bg"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Artigianato &nbsp;·&nbsp; Esclusività &nbsp;·&nbsp; Motorsport</span>
+    <h1 class="hero-title">L'Ingegneria<br><em>incontra</em> il Design</h1>
+    <p class="hero-sub">
+      Tavolini unici, nati dai cerchioni delle più iconiche vetture da corsa.<br>
+      Ogni pezzo è un'opera d'arte irripetibile per il tuo spazio.
+    </p>
+    <div class="hero-cta-wrap">
+      <a href="#collection" class="btn-primary">Scopri la Collezione</a>
+      <a href="#contact-section" class="btn-outline">Pezzi su Commissione</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scorri</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════ COLLECTION ═══════════ -->
+<section id="collection">
+  <div class="collection-header">
+    <p class="section-label reveal">— The Collection —</p>
+    <h2 class="section-title reveal delay-1">Ogni cerchione.<br><em>Una storia.</em></h2>
+    <span class="gold-line reveal delay-2" style="margin:0 auto 1rem;"></span>
+    <p class="reveal delay-2" style="max-width:560px;margin:0 auto;font-size:.85rem;color:var(--muted);">
+      Dalla pista al salotto. Cerchioni in lega forgiata da vetture iconiche, trasformati in sculture funzionali per chi non si accontenta del comune.
+    </p>
+  </div>
+
+  <!-- PRODUCT GRID -->
+  <div class="collection-grid">
+    <!-- CARD 1 -->
+    <div class="product-card reveal delay-1">
+      <img src="/image/3" loading="lazy" decoding="async"
+        alt="Progetto Tavolino"
+        onload="this.nextElementSibling.style.display='none'"
+        onerror="this.style.display='none'">
+      <div class="img-fallback">
+        <div class="rim-icon"></div>
+      </div>
+      <span class="product-corner">01</span>
+      <div class="product-overlay">
+        <div class="product-name">Serie Monza</div>
+        <div class="product-sub">Lega forgiata · Rovere fumé · Vetro temperato</div>
+      </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="product-card reveal delay-2">
+      <img src="/image/1" loading="lazy" decoding="async"
+        alt="Progetto Tavolino"
+        onload="this.nextElementSibling.style.display='none'"
+        onerror="this.style.display='none'">
+      <div class="img-fallback">
+        <div class="rim-icon"></div>
+      </div>
+      <span class="product-corner">02</span>
+      <div class="product-overlay">
+        <div class="product-name">Serie Nürburgring</div>
+        <div class="product-sub">Alluminio spazzolato · Noce canaletto · Vetro bronzato</div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="product-card reveal delay-3">
+      <img src="/image/4" loading="lazy" decoding="async"
+        alt="Progetto Tavolino"
+        onload="this.nextElementSibling.style.display='none'"
+        onerror="this.style.display='none'">
+      <div class="img-fallback">
+        <div class="rim-icon"></div>
+      </div>
+      <span class="product-corner">03</span>
+      <div class="product-overlay">
+        <div class="product-name">Serie Le Mans</div>
+        <div class="product-sub">Magnesio grezzo · Ebano · Vetro extrachiaro</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROCESS STEPS -->
+  <div class="process-strip">
+    <div class="process-step reveal delay-1">
+      <div class="step-num">01</div>
+      <div class="step-accent"></div>
+      <div class="step-title">Il Cerchione</div>
+      <p class="step-desc">Selezioniamo cerchioni in lega forgiata provenienti da vetture sportive e di lusso iconiche. Ogni cerchio porta con sé una storia di adrenalina e precisione ingegneristica.</p>
+    </div>
+    <div class="process-step reveal delay-2">
+      <div class="step-num">02</div>
+      <div class="step-accent"></div>
+      <div class="step-title">Il Legno</div>
+      <p class="step-desc">Piedistalli su misura realizzati a mano in legni pregiati — rovere fumé, noce canaletto, ebano — lavorati con tecniche tradizionali di ebanisteria italiana.</p>
+    </div>
+    <div class="process-step reveal delay-3">
+      <div class="step-num">03</div>
+      <div class="step-accent"></div>
+      <div class="step-title">Il Vetro</div>
+      <p class="step-desc">Top in vetro temperato o extrachiaro, sagomati con precisione millimetrica. Il risultato è un equilibrio tra trasparenza, leggerezza e solidità senza compromessi.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section id="about-section" style="padding:10rem 5vw;">
+  <div id="about">
+    <!-- VISUAL -->
+    <div class="about-visual reveal-left">
+      <div class="about-img-wrap">
+        <img src="/image/2" loading="lazy" decoding="async"
+        alt="Progetto Tavolino"
+        onload="this.nextElementSibling.style.display='none'"
+        onerror="this.style.display='none'">
+        <!-- fallback gradient -->
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 60% 40%,#1a1510,var(--carbon));display:flex;align-items:center;justify-content:center;z-index:-1">
+          <div class="rim-icon" style="width:200px;height:200px;"></div>
+        </div>
+      </div>
+      <div class="about-img-frame"></div>
+      <div class="about-badge">
+        <strong>100%</strong>
+        <span>Hand&shy;made</span>
+      </div>
+    </div>
+    <!-- TEXT -->
+    <div class="about-text reveal-right">
+      <p class="section-label">— La Nostra Filosofia —</p>
+      <h2 class="section-title">Arte nata<br>dalla <em>velocità</em></h2>
+      <span class="gold-line"></span>
+      <p class="about-body">
+        Velox nasce da un'ossessione: trovare la bellezza là dove nessuno pensa di cercarla. Nei cerchioni in lega di una supercar, nei dischi freno di una Porsche da gara, nei raggi di un'icona del motorsport.
+      </p>
+      <p class="about-body">
+        Questi componenti progettati per prestazioni estreme diventano, nelle nostre mani, il cuore di tavolini da salotto unici al mondo. Un atto di upcycling artistico che trasforma l'eccellenza meccanica in opera d'arredamento.
+      </p>
+      <p class="about-body">
+        Ogni pezzo è firmato, numerato, irripetibile. Non è arredamento. È una dichiarazione.
+      </p>
+      <div class="about-stats">
+        <div>
+          <span class="stat-num">47</span>
+          <span class="stat-lbl">Pezzi creati</span>
+        </div>
+        <div>
+          <span class="stat-num">12</span>
+          <span class="stat-lbl">Paesi nel mondo</span>
+        </div>
+        <div>
+          <span class="stat-num">∞</span>
+          <span class="stat-lbl">Pezzi identici</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section id="contact-section">
+  <div class="contact-grid">
+    <!-- INFO -->
+    <div class="reveal-left">
+      <p class="section-label">— L'Atelier —</p>
+      <h2 class="section-title">Commissiona<br>il <em>tuo pezzo</em></h2>
+      <span class="gold-line"></span>
+      <p style="font-size:.85rem;color:var(--muted);margin-bottom:3rem;line-height:2;">
+        Ogni tavolo è pensato intorno a te: il cerchione della tua vettura preferita, il legno che parla al tuo spazio, il vetro che rispecchia il tuo stile.
+      </p>
+      <div class="contact-detail">
+        <div class="contact-detail-label">Email</div>
+        <div class="contact-detail-val"><a href="mailto:atelier@velox-design.it">atelier@velox-design.it</a></div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-label">Atelier</div>
+        <div class="contact-detail-val">Via della Vittoria 12, Milano</div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-label">Appuntamenti</div>
+        <div class="contact-detail-val">Lun – Sab · 10:00 – 18:00</div>
+      </div>
+      <div class="social-row">
+        <a href="#" class="social-link" title="Instagram">IG</a>
+        <a href="#" class="social-link" title="Pinterest">PT</a>
+        <a href="#" class="social-link" title="LinkedIn">LI</a>
+        <a href="#" class="social-link" title="WhatsApp">WA</a>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="reveal-right">
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Nome</label>
+            <input type="text" id="fname" placeholder="Alessandro" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Cognome</label>
+            <input type="text" id="lname" placeholder="Ferretti" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="nome@esempio.it" required>
+        </div>
+        <div class="form-group">
+          <label for="interest">Interesse</label>
+          <select id="interest">
+            <option value="" disabled selected>Seleziona un'opzione</option>
+            <option>Pezzo da collezione (stock disponibile)</option>
+            <option>Commissione personalizzata</option>
+            <option>Informazioni generali</option>
+            <option>Partnership / Press</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="msg">Il tuo messaggio</label>
+          <textarea id="msg" placeholder="Descrivici la tua visione — il cerchione preferito, le dimensioni, i materiali…"></textarea>
+        </div>
+        <button type="submit" class="form-submit">Invia Richiesta</button>
+        <p class="form-note">Risponderemo entro 24 ore. Ogni progetto merita attenzione.</p>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <p>Grazie per averci scritto.</p>
+        <p style="font-size:.8rem;color:var(--muted);margin-top:.6rem;font-family:var(--sans);font-style:normal;letter-spacing:.05em">Ti risponderemo entro 24 ore.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <span class="footer-logo">Velox</span>
+  <span class="footer-copy">© 2025 Velox Design — Milano. Tutti i diritti riservati.</span>
+  <span class="footer-copy">Artigianato Italiano · Pezzo Unico</span>
+</footer>
+
+<!-- ═══════════ JAVASCRIPT ═══════════ -->
+<script src="script.js"></script>
+</body>
+</html>
